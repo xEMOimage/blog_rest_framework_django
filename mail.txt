@@ -144,16 +144,28 @@ admin.site.register(SomeModel, SomeModelAdmin)
 
 
 
+React
+
+npm install --save axios react-router-dom
+go to bootstrap cdn click on link in cdn
+
+ex:
+BootstrapCDN
+When you only need to include Bootstrap’s compiled CSS or JS, you can use <b>BootstrapCDN</b>.
+
+copy html ex:
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+then got public folder then index.html then paste above title
+
+then fo back open bootstrap documentation, search navbar got to it use which like
+then add to home.js and continue
+
+create .env and store
+REACT_APP_API_URL = 'http://localhost:8000'
 
 
-
-
-
-
-
-
-
-
+npm run build
+and replace build in frontend to backend
 
 
 

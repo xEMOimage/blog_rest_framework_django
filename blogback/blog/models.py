@@ -13,7 +13,12 @@ class Categories(models.TextChoices):
     TRAVEL = 'travel'
     BLOG = 'Blog'
 
+
 class BlogPost(models.Model):
+    YES_OR_NO = (
+        ('YES','YES'),
+        ('NO','NO')
+    )
     title = models.CharField(max_length=100)
     slug = models.SlugField()
     category = models.CharField(max_length=50, choices = Categories.choices,default=Categories.HEALTH)
@@ -22,7 +27,7 @@ class BlogPost(models.Model):
     month = models.CharField(max_length=3)
     day = models.CharField(max_length=2)
     content = models.TextField()
-    featured = models.BooleanField(default=False)
+    featured = models.CharField(max_length=40,choices = YES_OR_NO,default="NO")
     date_created = models.DateTimeField(default = datetime.now,blank=True)
 
     def save(self,*args,**kwargs):
