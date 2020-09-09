@@ -11,7 +11,7 @@ Postgresql
 
 
 terminal1:
-npm install
+npm install <br/>>
 npm run start
 
 terminal 2:
