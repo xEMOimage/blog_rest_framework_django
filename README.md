@@ -6,7 +6,7 @@ react js
 Backend:
 django
 
-DataBase:
+DataBase(need to create database manually set username and password and db_name and change setting in setting.py):
 Postgresql
 
 
